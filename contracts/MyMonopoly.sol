@@ -12,7 +12,7 @@ import {
  * @dev An ERC20 contract having 18 decimals and total fixed supply of
  * 1 Billion tokens.
  */
-contract MetaMonopoly is ERC20Votes {
+contract MyMonopoly is ERC20Votes {
 
     // CAP of total supply.
     uint256 public immutable CAP;
@@ -21,8 +21,8 @@ contract MetaMonopoly is ERC20Votes {
 
     /// Initialises contract's state and mints 1 Billion tokens.
     constructor()
-        ERC20Permit("Meta Monopoly")
-        ERC20("Meta Monopoly", "MONOPOLY")
+        ERC20Permit("My Monopoly")
+        ERC20("My Monopoly", "My")
     {
         CAP = 1_000_000_000 * (10 ** decimals());
 
